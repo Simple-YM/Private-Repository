@@ -1,0 +1,11 @@
+CV_EXPORTS_W void fastNlMeansDenoisingColored( InputArray src, OutputArray dst,
+        float h = 3, float hColor = 3,
+        int templateWindowSize = 7, int searchWindowSize = 21
+        
+//参数说明：
+//src 输入图像
+//dst 输出图像
+//h 决定过滤器强度。h 值高可以很好的去除噪声,但也会把图像的细节抹去。(取 10 的效果不错）
+//hColor 与h相同，使用于彩色图像
+//templateWindowSize 奇数。(推荐值为 7）
+//searchWindowSize 奇数。(推荐值为 21)
